@@ -1,0 +1,33 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use \Drupal\user\UserInterface;
+
+/**
+ * @param $route_name
+ * @param RouteMatchInterface $route_match
+ * @return string
+ */
+function hello_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+
+    // Main module help for the block module.
+    case 'help.page.hello':
+      return '<p>' . t('This............ ') . '</p>';
+
+  }
+}
+
+# Planifier une tache
+function hello_cron()
+{
+  \Drupal::messenger()->addMessage(t('Hello CRON'));
+}
+
+function hello_user_login(UserInterface $account)
+{
+  \Drupal::messenger()->addMessage(t('Welcome dear %name!', ['%name' => $account->getAccountName()]
+  ));
+}
+
