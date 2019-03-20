@@ -32,8 +32,12 @@ class Hello extends BlockBase{
         '@name' => $name,
         '%time' => \Drupal::service('date.formatter')->format(\Drupal::service('datetime.time')->getCurrentTime(), 'custom', 'H:i s\s'),
       ]),
+      '#cache'=>[
+        'keys' => ['hello:block'],
+        'contexts' => ['user'],
+        'max-age' => '10',
+      ],
     ];
-
 
     return $build;
   }

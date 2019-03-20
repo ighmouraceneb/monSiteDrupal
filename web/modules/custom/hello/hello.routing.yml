@@ -1,3 +1,20 @@
+hello.form:
+  path: 'hello/hello-form'
+  defaults:
+    _title: 'calculator'
+    _form: 'Drupal\hello\Form\CalculatorForm'
+  requirements:
+    _access: 'TRUE'
+
+hello.test:
+  path: '/hello/liste-noeuds/{nodetype}'
+  defaults:
+    _title: 'Node list'
+    _controller: '\Drupal\hello\Controller\TestController::content'
+    nodetype: ''
+  requirements:
+    _access: 'TRUE'
+
 hello.hello:
   path: '/hello/{param}'
   defaults:
@@ -6,3 +23,14 @@ hello.hello:
     param: 'no parameter'
   requirements:
     _access: 'TRUE'
+
+hello.statistics:
+  path: '/user/{user}/statistics'
+  defaults:
+    _title: 'User Stat'
+    _controller: '\Drupal\hello\Controller\UserStatController::content'
+  requirements:
+    _access: 'TRUE'
+    user: '\d+'
+
+
