@@ -1,0 +1,16 @@
+uuid: ffce8027-820b-4d23-bb1c-6561244586b6
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Prod
+description: ''
+folder: ../config/prod
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
