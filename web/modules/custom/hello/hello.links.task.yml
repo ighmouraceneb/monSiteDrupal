@@ -21,3 +21,10 @@ hello.statistics:
   route_name: hello.statistics
   base_route: entity.user.canonical
   weight: 3
+
+hello.statisticsEditConfigForm:
+  title: 'Config'
+  route_name: hello.statisticsEditConfigForm
+  base_route: system.admin_config
+  weight: 3
+

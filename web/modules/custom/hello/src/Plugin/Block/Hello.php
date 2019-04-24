@@ -8,7 +8,6 @@
 
 namespace Drupal\hello\Plugin\Block;
 
-
 use Drupal\Core\Block\BlockBase;
 
 

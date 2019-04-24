@@ -30,6 +30,16 @@ hello.statistics:
     _title: 'User Stat'
     _controller: '\Drupal\hello\Controller\UserStatController::content'
   requirements:
+    _access_hello: '48'
+
+
+
+hello.statisticsEditConfigForm:
+  path: '/admin/config/hello'
+  defaults:
+    _title: 'User Stat config'
+    _form: 'Drupal\hello\Form\UserStatUpdateForm'
+  requirements:
     _access: 'TRUE'
     user: '\d+'
 

@@ -24,17 +24,33 @@ class UserStatController extends ControllerBase
 
 
     $rows = [];
+    $connexions = 0;
     foreach($query as $record){
       $rows [] = [
         $record->action == '1' ? $this->t('Login') : $this->t('Logout'),
         \Drupal::service('date.formatter')->format($record->time),
       ];
-    }
-
-    return [
+      $connexions = $connexions + $record->action;
+    };
+    $data = [
+      'user' => $user,
+      'count' => $connexions
+    ];
+    $message =  [
+      '#theme' => 'hello-user-connexion',
+      '#user' => $user,
+      '#count' => $connexions
+    ];
+    $table = [
       '#type'=> 'table',
       '#header'=> [$this->t('Action'), $this->t('Time')],
       '#rows'=> $rows,
+    ];
+
+
+    return [
+      'message' => $message,
+      'table' => $table,
 
     ];
 
