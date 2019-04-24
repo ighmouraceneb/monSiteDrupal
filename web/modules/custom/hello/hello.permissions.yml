@@ -1,0 +1,4 @@
+access hello:
+  title: 'access hello'
+  description: 'Accès au compteur de session'
+

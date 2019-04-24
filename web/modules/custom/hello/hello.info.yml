@@ -1,0 +1,13 @@
+#Nom du module.
+name: 'Hello'
+#Description du module.
+description: 'Hello module for D8 developper'
+#Type de code (module, theme,...)
+type: module
+#version de Drupal pour laquelle le module est développé
+core: 8.x
+#Version du module
+version: '8.x-1.0'
+#Groupe du module
+Package: 'Training'
+

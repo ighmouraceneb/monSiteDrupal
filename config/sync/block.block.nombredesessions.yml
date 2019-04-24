@@ -1,0 +1,20 @@
+uuid: 4a4eaa20-fd65-48e3-96b9-d8dd877ea6df
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello
+  theme:
+    - bartik
+id: nombredesessions
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: activeSession_block
+settings:
+  id: activeSession_block
+  label: 'Nombre de sessions!'
+  provider: hello
+  label_display: visible
+visibility: {  }
