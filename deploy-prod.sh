@@ -10,6 +10,11 @@ drush updb -y
 #Export des config de prod
 drush csex prod -y
 
+#Ajout des config de pro
+git add config/prod
+git commit -m 'Mise à jour des config de prod'
+git push origin master
+
 #Importer les configuration
 drush cim -y
 
