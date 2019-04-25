@@ -36,6 +36,7 @@ module:
   node: 0
   options: 0
   path: 0
+  perf: 0
   quickedit: 0
   rdf: 0
   search: 0
