@@ -27,3 +27,6 @@
 *DS_Store
 # Ignore file idea genrarted by phpstorm
 /.idea/
+
+#Ignore le dossier privtae-files
+/private-files/
