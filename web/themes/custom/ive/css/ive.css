@@ -1,0 +1,45 @@
+a {
+  color:#795548;
+}
+
+a:hover {
+  color:#000000;
+}
+
+#header {
+  background-color: #009688;
+  background-image: linear-gradient(to bottom, #009688 0%, #00BCD4 100%);
+}
+
+span {
+  color: #009688;
+}
+
+.sidebar .block {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+.sidebar h2 {
+  text-shadow: 0 0px 0 #fff;
+  color: #fff;
+}
+
+ul.menu a.is-active {
+  color: #009688;
+}
+
+.bottom-wide {
+  margin: 15px;
+}
+.bottom-wide .search-form .form-search {
+   width: 85%;
+   height: 35px;
+ }
+
+.bottom-wide .button.search-form__submit {
+  width: 10%;
+  height: 45px;
+  background: #00a5a5 url(../../../../misc/icons/505050/loupe.svg) no-repeat center;
+}
+

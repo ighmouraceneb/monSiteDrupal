@@ -1,0 +1,9 @@
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-wrapper > div {
+  width: 50%;
+}
+
